@@ -5,6 +5,7 @@
 const pick = ['ROCK', 'PAPER', 'SCISSORS'];
 
 let compChoice = getComputerChoice();
+let userPick = prompt("Rock, Paper or Scissors? ").toUpperCase();
 
 function getComputerChoice(){
     return Math.floor(Math.random() * 3);
