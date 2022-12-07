@@ -2,7 +2,7 @@
 //     let choice = getComputerChoice();
 //     console.log(choice);
 // } Testing the input
-const pick = ['Rock', 'Paper', 'Scissors'];
+const pick = ['ROCK', 'PAPER', 'SCISSORS'];
 
 let compChoice = getComputerChoice();
 
