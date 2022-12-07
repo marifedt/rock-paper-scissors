@@ -1,3 +1,5 @@
+const pick = ['ROCK', 'PAPER', 'SCISSORS'];
+
 function getComputerChoice(){
     return Math.floor(Math.random() * 3);
 }
@@ -40,12 +42,20 @@ function playRound(playerSelection, computerSelection) {
     return msg;
 }
 
+function game(){
+    let compChoice = getComputerChoice();
+    let userPick = prompt("Rock, Paper or Scissors? ").toUpperCase();
+    console.log(playRound(userPick, compChoice));
+}
 
-const pick = ['ROCK', 'PAPER', 'SCISSORS'];
+for (let i = 0; i < 5; i++) {
+    game();
+}
 
-let compChoice = getComputerChoice();
-let userPick = prompt("Rock, Paper or Scissors? ").toUpperCase();
 
-console.log(playRound(userPick, compChoice));
+
+
+
+
 
 
