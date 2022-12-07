@@ -1,14 +1,3 @@
-// for (let i = 0; i < 10; i++) {
-//     let choice = getComputerChoice();
-//     console.log(choice);
-// } Testing the input
-const pick = ['ROCK', 'PAPER', 'SCISSORS'];
-
-let compChoice = getComputerChoice();
-let userPick = prompt("Rock, Paper or Scissors? ").toUpperCase();
-
-console.log(playRound(userPick, compChoice));
-
 function getComputerChoice(){
     return Math.floor(Math.random() * 3);
 }
@@ -50,3 +39,13 @@ function playRound(playerSelection, computerSelection) {
 
     return msg;
 }
+
+
+const pick = ['ROCK', 'PAPER', 'SCISSORS'];
+
+let compChoice = getComputerChoice();
+let userPick = prompt("Rock, Paper or Scissors? ").toUpperCase();
+
+console.log(playRound(userPick, compChoice));
+
+
