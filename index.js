@@ -2,8 +2,9 @@
 //     let choice = getComputerChoice();
 //     console.log(choice);
 // } Testing the input
+const pick = ['Rock', 'Paper', 'Scissors'];
 
-let choice = getComputerChoice();
+let compChoice = getComputerChoice();
 
 function getComputerChoice(){
     return Math.floor(Math.random() * 3);
