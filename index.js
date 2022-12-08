@@ -13,7 +13,7 @@ function reset(){
     userScore = 0;
     compScore = 0;
     setTimeout(() => {
-        scores.textContent = "User: 0 - Computer: 0";
+        scores.textContent = "You: 0 - Computer: 0";
         result.textContent = "";
     }, 3000);
 }
@@ -76,7 +76,7 @@ function playRound(e) {
             break;
     }
     result.textContent = msg;
-    scores.textContent = `User: ${userScore}  - Computer: ${compScore}`;
+    scores.textContent = `You: ${userScore}  - Computer: ${compScore}`;
 
     checkScore();
 }
