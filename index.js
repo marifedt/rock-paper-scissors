@@ -34,7 +34,7 @@ function checkScore(){
 
 function playRound(e) {
     let compSelect = getComputerChoice();
-    let playerSelect = e.target.innerText.toUpperCase();
+    let playerSelect = e.target.name.toUpperCase();
     let msg;
 
     switch (playerSelect) {
