@@ -8,13 +8,24 @@ body{
     font-size: 16px;
     flex-direction: column;
     gap: 2em;
-    background: gray;
-    color: white;
+    background: #232931;
+    color: #232931;
+    margin: 0;
 }
 
+header{
+    width: 100%;
+    text-align: center;
+    background: #556677;
+}
 h1{
     font-size: 4em;
-    letter-spacing: 2px;
+    color: 393e46;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
 #btn-container{
@@ -28,21 +39,23 @@ button{
     font-family: inherit;
     padding: 20px;
     font-size: 4em;
-    border-color: black;
-    
+    border-color: 2px solid #393e46;
+    background-color: #393e46;
+    color: #ffffff;
 }
 
 button:hover{
+    border: 2px solid;
     transition: 0.07s ease;
     box-shadow: 0px 4px 8px 1px black;
-    border-color: aqua;
+    border-color: #4ecca3;
 }
 
 .score{
     box-shadow: 0px 4px 8px 1px black;
     padding: 0.7em;
     font-size: 3em;
-    color: aqua;
+    color: #4ecca3;
 }
 
 .result{
