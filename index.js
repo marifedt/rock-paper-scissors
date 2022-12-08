@@ -12,15 +12,19 @@ function getComputerChoice(){
 function reset(){
     userScore = 0;
     compScore = 0;
+    setTimeout(() => {
+        scores.textContent = "User: 0 - Computer: 0";
+        result.textContent = "";
+    }, 3000);
 }
 function checkScore(){
     const result = document.querySelector('.result');
     if(userScore === 5 || compScore === 5){
-        result.textContent = "Result for 5 rounds: ";
+        result.textContent = "";
         if(userScore > compScore){
-            result.textContent += "You Win! Congratulations!";
+            result.textContent += "You Win against Computer! Congratulations!";
         } else{
-            result.textContent += "You Lose! Better Luck Next Time!";
+            result.textContent += "You Lose against Computer! Better Luck Next Time!";
         }
 
         result.textContent +=" Game will Reset!";
